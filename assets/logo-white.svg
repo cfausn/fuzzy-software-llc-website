@@ -13,8 +13,8 @@
     </filter>
   </defs>
 
-  <!-- Modern Logo Mark -->
-  <g transform="translate(15, 15)">
+  <!-- Modern Logo Mark - centered vertically -->
+  <g transform="translate(10, 10) scale(1.33, 1.33)">
     <!-- Outer ring -->
     <circle cx="15" cy="15" r="14" fill="none" stroke="url(#logoGradient)" stroke-width="2" opacity="0.3"/>
 
@@ -31,18 +31,18 @@
   </g>
 
   <!-- Company Name with white text for Fuzzy Software -->
-  <g transform="translate(55, 23)">
+  <g transform="translate(60, 30)">
     <text font-family="Inter, system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="white">
       <tspan>Fuzzy</tspan>
       <tspan x="60" font-weight="500">Software</tspan>
     </text>
-    <text x="155" y="0" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#64748b" letter-spacing="0.5">
+    <text x="155" y="0" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#94a3b8" letter-spacing="0.5">
       LLC
     </text>
   </g>
 
   <!-- Subtle tagline -->
-  <text x="55" y="45" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="9" font-weight="400" fill="#94a3b8" letter-spacing="0.3">
+  <text x="60" y="50" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="9" font-weight="400" fill="#cbd5e1" letter-spacing="0.3">
     SENIOR ENGINEERS ON DEMAND
   </text>
 </svg>
