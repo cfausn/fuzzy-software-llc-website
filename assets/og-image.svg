@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#f9fafb"/>
+
+  <!-- Grid pattern for visual interest -->
+  <defs>
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e5e7eb" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.5"/>
+
+  <!-- Logo Mark -->
+  <g transform="translate(100, 240)">
+    <path d="M40 30 L70 20 L90 40 L80 70 L50 80 L30 60 Z" fill="#2563eb" opacity="0.8"/>
+    <path d="M44 34 L66 26 L82 42 L74 64 L52 72 L36 56 Z" fill="#2563eb" opacity="0.6"/>
+    <path d="M48 38 L62 32 L74 44 L68 58 L54 64 L42 52 Z" fill="#2563eb" opacity="0.4"/>
+  </g>
+
+  <!-- Company Name -->
+  <text x="220" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#111827">
+    Fuzzy Software
+  </text>
+
+  <!-- LLC -->
+  <text x="810" y="310" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="400" fill="#6b7280">
+    LLC
+  </text>
+
+  <!-- Tagline -->
+  <text x="100" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="400" fill="#4b5563">
+    Senior engineers on demand.
+  </text>
+  <text x="100" y="460" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="400" fill="#4b5563">
+    Outcomes in weeks, not quarters.
+  </text>
+</svg>

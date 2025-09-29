@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuzzy Software LLC - Senior Engineers on Demand</title>
+    <meta name="description" content="Senior DevOps, full-stack, and QA squads that deliver outcomes in weeks, not quarters. Cloud cost reductions, data lake quickstarts, and DevOps stabilization.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fuzzy Software LLC - Senior Engineers on Demand">
+    <meta property="og:description" content="Senior DevOps, full-stack, and QA squads that deliver outcomes in weeks, not quarters.">
+    <meta property="og:image" content="https://fuzzysoftwarellc.com/assets/og-image.png">
+    <meta property="og:url" content="https://fuzzysoftwarellc.com">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fuzzy Software LLC - Senior Engineers on Demand">
+    <meta name="twitter:description" content="Senior DevOps, full-stack, and QA squads that deliver outcomes in weeks, not quarters.">
+    <meta name="twitter:image" content="https://fuzzysoftwarellc.com/assets/og-image.png">
+
+    <link rel="canonical" href="https://fuzzysoftwarellc.com">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        'primary-dark': '#1d4ed8',
+                        'primary-light': '#3b82f6',
+                        accent: '#0891b2',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/assets/styles.css">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Fuzzy Software LLC",
+      "url": "https://fuzzysoftwarellc.com",
+      "email": "contact@fuzzysoftwarellc.com",
+      "sameAs": ["https://www.linkedin.com/company/fuzzy-software-llc/"],
+      "logo": "https://fuzzysoftwarellc.com/assets/logo.svg",
+      "founder": { "@type": "Person", "name": "Colin Fausnaught" }
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <!-- Skip to content link -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-md font-medium">Skip to content</a>
+
+    <!-- Announcement Bar -->
+    <div class="bg-gradient-to-r from-primary to-accent text-white text-sm py-2 text-center">
+        <p class="font-medium">🚀 Currently accepting Q1 2026 engagements • Response within 24 hours</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="sticky top-0 bg-white/95 backdrop-blur-md border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center group">
+                        <img src="/assets/logo.svg" alt="Fuzzy Software LLC" class="h-12 w-auto transition-transform group-hover:scale-105">
+                    </a>
+                    <div class="hidden lg:block ml-10">
+                        <div class="flex items-center space-x-1">
+                            <a href="/" class="px-4 py-2 text-gray-900 font-semibold border-b-2 border-primary">Home</a>
+                            <a href="/services.html" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all hover:bg-gray-50 rounded-lg">Services</a>
+                            <a href="/process.html" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all hover:bg-gray-50 rounded-lg">Process</a>
+                            <a href="/about.html" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all hover:bg-gray-50 rounded-lg">About</a>
+                            <a href="/faqs.html" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all hover:bg-gray-50 rounded-lg">FAQs</a>
+                            <a href="/contact.html" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all hover:bg-gray-50 rounded-lg">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="tel:+1234567890" class="text-gray-600 hover:text-gray-900 font-medium hidden xl:block">
+                        <span class="text-sm">Quick Response:</span> <span class="font-semibold">24 hrs</span>
+                    </a>
+                    <a href="https://calendly.com/fuzzy-software-llc/30min" class="bg-gradient-to-r from-primary to-primary-dark text-white px-5 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all transform hover:-translate-y-0.5 pulse">
+                        Book a 30-min call →
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="lg:hidden p-2 rounded-lg bg-gray-50 text-gray-700 hover:bg-gray-100 transition-colors" aria-label="Open menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="fixed inset-y-0 right-0 w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 z-50">
+        <div class="flex items-center justify-between p-4 border-b">
+            <span class="text-xl font-semibold">Menu</span>
+            <button id="mobile-menu-close" class="p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="p-4 space-y-2">
+            <a href="/" class="block px-4 py-3 rounded-lg text-gray-900 font-medium bg-gray-50">Home</a>
+            <a href="/services.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">Services</a>
+            <a href="/process.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">Process</a>
+            <a href="/about.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">About</a>
+            <a href="/faqs.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">FAQs</a>
+            <a href="/contact.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">Contact</a>
+            <div class="pt-4">
+                <a href="https://calendly.com/fuzzy-software-llc/30min" class="block px-4 py-3 bg-gradient-to-r from-primary to-primary-dark text-white rounded-lg text-center font-semibold">
+                    Book a 30-min call →
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 hero-pattern"></div>
+
+            <!-- Hero Content -->
+            <div class="relative py-24 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-7xl mx-auto">
+                    <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+                        <div class="lg:col-span-7">
+                            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-6 fade-in">
+                                Senior engineers<br>
+                                <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">on demand.</span>
+                            </h1>
+
+                            <p class="text-xl sm:text-2xl text-gray-300 mb-8 font-light fade-in">
+                                Outcomes in weeks, not quarters. DevOps, full-stack, and QA squads ready to deliver measurable results.
+                            </p>
+
+                            <!-- CTA Buttons -->
+                            <div class="flex flex-col sm:flex-row gap-4 mb-12 fade-in">
+                                <a href="https://calendly.com/fuzzy-software-llc/30min" class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-primary to-primary-dark rounded-xl hover:shadow-2xl transform transition-all hover:-translate-y-1 overflow-hidden">
+                                    <span class="relative z-10">Book a 30-min call →</span>
+                                    <div class="absolute inset-0 bg-gradient-to-r from-primary-dark to-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                </a>
+                                <a href="/services.html" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-white/30 rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all">
+                                    See our services →
+                                </a>
+                            </div>
+
+                            <!-- Stats -->
+                            <div class="grid grid-cols-3 gap-8 fade-in">
+                                <div>
+                                    <div class="text-3xl font-bold text-white">
+                                        <span class="counter" data-target="15">0</span>M+
+                                    </div>
+                                    <div class="text-sm text-gray-400 mt-1">Annual savings estimated</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl font-bold text-white">
+                                        <span class="counter" data-target="10">0</span>-15x
+                                    </div>
+                                    <div class="text-sm text-gray-400 mt-1">Performance improvements</div>
+                                </div>
+                                <div>
+                                    <div class="text-3xl font-bold text-white">
+                                        <span class="counter" data-target="24">0</span>hr
+                                    </div>
+                                    <div class="text-sm text-gray-400 mt-1">Response time</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Decorative Element -->
+                        <div class="hidden lg:block lg:col-span-5">
+                            <div class="relative">
+                                <svg class="w-full h-auto animate-pulse" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.8" />
+                                            <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0.8" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="200" cy="200" r="150" fill="url(#gradient)" opacity="0.1"/>
+                                    <circle cx="200" cy="200" r="120" fill="url(#gradient)" opacity="0.15"/>
+                                    <circle cx="200" cy="200" r="90" fill="url(#gradient)" opacity="0.2"/>
+                                    <circle cx="200" cy="200" r="60" fill="url(#gradient)" opacity="0.25"/>
+                                    <circle cx="200" cy="200" r="30" fill="url(#gradient)" opacity="0.3"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Outcome-focused engagements</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">We package our expertise into short, high-impact sprints that deliver measurable results. Start small, expand after proven value.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Cloud Cost Kill Switch -->
+                    <div class="group relative service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 card-hover fade-in">
+                        <div class="absolute top-8 right-8">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                                Most Popular
+                            </span>
+                        </div>
+
+                        <div class="mb-6">
+                            <div class="w-14 h-14 bg-gradient-to-br from-red-500 to-orange-500 rounded-xl flex items-center justify-center text-white">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Cloud Cost Kill Switch</h3>
+                        <p class="text-gray-600 mb-6">2-week diagnostic → implementation plan with optional savings-share model</p>
+
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-gray-600">Complete cost mapping & analysis</span>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-gray-600">Right-sizing recommendations</span>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-gray-600">Commitment & savings plan strategy</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-gray-100">
+                            <p class="text-sm font-semibold text-gray-900 mb-1">Proven result:</p>
+                            <p class="text-sm text-gray-600">$15M+ annual AWS savings & 10-15x pipeline improvements</p>
+                        </div>
+
+                        <a href="/services.html#cloud-cost" class="absolute inset-0 rounded-2xl"></a>
+                    </div>
+
+                    <!-- Data Lake Quickstart -->
+                    <div class="group relative service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 card-hover fade-in" style="animation-delay: 0.1s">
+                        <div class="mb-6">
+                            <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center text-white">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Data Lake Quickstart</h3>
+                        <p class="text-gray-600 mb-6">3-4 week MVP from ingest to analytics dashboard</p>
+
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-gray-600">Bronze → Silver → Gold architecture</span>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-gray-600">AWS, Databricks, or Snowflake</span>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-gray-600">Security & governance included</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-gray-100">
+                            <p class="text-sm font-semibold text-gray-900 mb-1">Typical outcome:</p>
+                            <p class="text-sm text-gray-600">First insights in week 1, full platform in 4 weeks</p>
+                        </div>
+
+                        <a href="/services.html#data-lake" class="absolute inset-0 rounded-2xl"></a>
+                    </div>
+
+                    <!-- DevOps Stabilization -->
+                    <div class="group relative service-card bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 card-hover fade-in" style="animation-delay: 0.2s">
+                        <div class="mb-6">
+                            <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center text-white">
+                                <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">DevOps Stabilization Sprint</h3>
+                        <p class="text-gray-600 mb-6">2 weeks to eliminate CI/CD pain points & establish reliability</p>
+
+                        <div class="space-y-3 mb-6">
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-gray-600">Fix flaky tests & pipelines</span>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-gray-600">Implement proper observability</span>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="w-5 h-5 text-green-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm text-gray-600">Create runbooks & golden paths</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-gray-100">
+                            <p class="text-sm font-semibold text-gray-900 mb-1">Typical result:</p>
+                            <p class="text-sm text-gray-600">70% reduction in deployment failures & on-call incidents</p>
+                        </div>
+
+                        <a href="/services.html#devops" class="absolute inset-0 rounded-2xl"></a>
+                    </div>
+                </div>
+
+                <!-- Custom Engagements -->
+                <div class="mt-12 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl p-8 text-center fade-in">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Custom Engagements</h3>
+                    <p class="text-lg text-gray-700 mb-4">
+                        <strong>60% of our contracts are custom packages</strong> tailored to unique business needs.
+                    </p>
+                    <p class="text-gray-600 mb-6">
+                        From API integrations to full-stack development, we craft solutions that fit your specific requirements and timeline.
+                    </p>
+                    <a href="/contact.html" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-primary-dark text-white rounded-lg font-semibold hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                        Discuss your project →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Why engineering teams choose Fuzzy</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">We're not another staffing agency. We're senior engineers who solve problems.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                    <div class="text-center fade-in">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-2xl text-white mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Senior-Only Teams</h3>
+                        <p class="text-gray-600">7-15 years average experience. No junior padding, no learning on your dime.</p>
+                    </div>
+
+                    <div class="text-center fade-in" style="animation-delay: 0.1s">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl text-white mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">AI-Powered Efficiency</h3>
+                        <p class="text-gray-600"><strong>30-40% faster delivery</strong> at lower cost. Our teams use AI to eliminate repetitive work and focus on high-value engineering.</p>
+                    </div>
+
+                    <div class="text-center fade-in" style="animation-delay: 0.2s">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-2xl text-white mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Measurable Outcomes</h3>
+                        <p class="text-gray-600">Every engagement targets specific metrics: cost, latency, uptime, throughput.</p>
+                    </div>
+
+                    <div class="text-center fade-in" style="animation-delay: 0.3s">
+                        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-2xl text-white mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Enterprise-Ready</h3>
+                        <p class="text-gray-600">Security-first approach, comprehensive documentation, clean handoffs.</p>
+                    </div>
+                </div>
+
+                <!-- Enhanced AI Section -->
+                <div class="bg-gradient-to-r from-emerald-50 to-blue-50 rounded-2xl p-8 border border-emerald-200 mb-16 fade-in">
+                    <div class="lg:grid lg:grid-cols-12 lg:gap-8 items-center">
+                        <div class="lg:col-span-7 mb-6 lg:mb-0">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">AI-Augmented Teams = Lower Costs</h3>
+                            <p class="text-gray-700 mb-4">
+                                While others are still debating AI, we're using it to deliver better results at lower prices. Our senior engineers leverage AI for code generation, test scaffolding, documentation, and data analysis—with expert human oversight at every step.
+                            </p>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700"><strong>30-40% faster delivery</strong> through AI-assisted development</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700"><strong>Lower project costs</strong> while maintaining senior-level quality</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-5 h-5 text-emerald-500 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                    <span class="text-gray-700"><strong>More coverage</strong> with comprehensive testing and documentation</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="lg:col-span-5">
+                            <div class="bg-white rounded-xl p-6 shadow-lg">
+                                <h4 class="font-bold text-gray-900 mb-4">The Math is Simple:</h4>
+                                <div class="space-y-3">
+                                    <div class="flex justify-between items-center pb-2 border-b">
+                                        <span class="text-gray-600">Traditional Senior Team</span>
+                                        <span class="font-bold text-gray-900">$$$$$</span>
+                                    </div>
+                                    <div class="flex justify-between items-center pb-2 border-b">
+                                        <span class="text-gray-600">Our AI-Augmented Team</span>
+                                        <span class="font-bold text-emerald-600">$$$</span>
+                                    </div>
+                                    <div class="flex justify-between items-center pt-2">
+                                        <span class="font-semibold text-gray-900">Your Savings</span>
+                                        <span class="font-bold text-emerald-600">40%+</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="relative py-24 bg-gradient-to-br from-dark to-gray-900 overflow-hidden">
+            <div class="absolute inset-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 mix-blend-overlay"></div>
+            </div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6 fade-in">
+                    Have a deadline or bottleneck?
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-300 mb-10 fade-in">
+                    We can start in days, not months. Let's discuss your project.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+                    <a href="https://calendly.com/fuzzy-software-llc/30min" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-gray-900 bg-white rounded-xl hover:bg-gray-100 transform transition-all hover:-translate-y-1 hover:shadow-2xl">
+                        Book a 20-min scoping call →
+                    </a>
+                    <a href="/contact.html" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-white/30 rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all">
+                        Send us a message →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <img src="/assets/logo-white.svg" alt="Fuzzy Software LLC" class="h-12 w-auto mb-4">
+                    <p class="text-gray-500 mb-4 max-w-sm">Senior engineers on demand. Outcomes in weeks, not quarters.</p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:contact@fuzzysoftwarellc.com" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/fuzzy-software-llc/" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/services.html#cloud-cost" class="hover:text-white transition-colors">Cloud Cost Kill Switch</a></li>
+                        <li><a href="/services.html#data-lake" class="hover:text-white transition-colors">Data Lake Quickstart</a></li>
+                        <li><a href="/services.html#devops" class="hover:text-white transition-colors">DevOps Stabilization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="/process.html" class="hover:text-white transition-colors">Process</a></li>
+                        <li><a href="/faqs.html" class="hover:text-white transition-colors">FAQs</a></li>
+                        <li><a href="/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm text-gray-500">© <span id="copyright-year"></span> Fuzzy Software LLC. All rights reserved.</p>
+                    <p class="text-sm text-gray-500 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a> •
+                        <a href="#" class="hover:text-white transition-colors ml-4">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script src="/assets/site.js"></script>
+</body>
+</html>

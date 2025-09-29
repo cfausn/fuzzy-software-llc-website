@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Fuzzy Software LLC</title>
+    <meta name="description" content="Senior-only engineering collective. We integrate with your team or deliver turnkey squads focused on measurable outcomes.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="About - Fuzzy Software LLC">
+    <meta property="og:description" content="Senior-only engineering collective. We integrate with your team or deliver turnkey squads.">
+    <meta property="og:image" content="https://fuzzysoftware.io/assets/og-image.png">
+    <meta property="og:url" content="https://fuzzysoftware.io/about">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About - Fuzzy Software LLC">
+    <meta name="twitter:description" content="Senior-only engineering collective. We integrate with your team or deliver turnkey squads.">
+    <meta name="twitter:image" content="https://fuzzysoftware.io/assets/og-image.png">
+
+    <link rel="canonical" href="https://fuzzysoftware.io/about">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Skip to content link -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-600 text-white px-4 py-2 rounded-lg">Skip to content</a>
+
+    <!-- Announcement Bar -->
+    <div class="bg-gradient-to-r from-emerald-600 to-blue-600 text-white text-center py-2 text-sm">
+        Currently accepting Q1 2026 engagements • Response within 24 hours
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 bg-white/95 backdrop-blur-md shadow-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <img src="/assets/logo.svg" alt="Fuzzy Software LLC" class="h-12 w-auto">
+                    </a>
+                    <div class="hidden md:block ml-10">
+                        <div class="flex items-center space-x-8">
+                            <a href="/" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">Home</a>
+                            <a href="/services.html" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">Services</a>
+                            <a href="/process.html" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">Process</a>
+                            <a href="/about.html" class="text-emerald-600 font-semibold border-b-2 border-emerald-600 pb-1">About</a>
+                            <a href="/faqs.html" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">FAQs</a>
+                            <a href="/contact.html" class="text-gray-700 hover:text-emerald-600 transition-colors font-medium">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="https://calendly.com/fuzzy-software-llc/30min" class="bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-6 py-2.5 rounded-lg hover:shadow-lg transform hover:-translate-y-0.5 transition-all font-medium">Book a 30-min call</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-emerald-600" aria-label="Open menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu overlay -->
+        <div id="mobile-menu-overlay" class="hidden fixed inset-0 bg-black/50 z-40"></div>
+        <!-- Mobile menu drawer -->
+        <div id="mobile-menu" class="hidden fixed right-0 top-0 h-full w-64 bg-white shadow-xl z-50 transform translate-x-full transition-transform">
+            <div class="p-4">
+                <button id="mobile-menu-close" class="absolute top-4 right-4 p-2 rounded-lg text-gray-500 hover:bg-gray-100">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                <div class="mt-12 space-y-1">
+                    <a href="/" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 font-medium">Home</a>
+                    <a href="/services.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 font-medium">Services</a>
+                    <a href="/process.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 font-medium">Process</a>
+                    <a href="/about.html" class="block px-4 py-3 rounded-lg bg-emerald-50 text-emerald-600 font-semibold">About</a>
+                    <a href="/faqs.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 font-medium">FAQs</a>
+                    <a href="/contact.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-emerald-50 hover:text-emerald-600 font-medium">Contact</a>
+                    <a href="https://calendly.com/fuzzy-software-llc/30min" class="block mt-4 px-4 py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white rounded-lg text-center font-medium">Book a 30-min call</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero-pattern text-white py-24 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="max-w-3xl fade-in">
+                    <h1 class="text-5xl font-bold mb-6">About Fuzzy Software</h1>
+                    <p class="text-xl text-gray-300 leading-relaxed">
+                        A senior-only engineering collective that delivers measurable outcomes in weeks, not quarters. We're not consultants—we're builders.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who We Are -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="fade-in">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-6">Who We Are</h2>
+                        <p class="text-lg text-gray-700 mb-6">
+                            Fuzzy Software LLC is a senior-only engineering collective. We've shipped at venture-backed startups and large enterprises, with deep expertise across the entire stack.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">7+ Years Average Experience</h3>
+                                    <p class="text-gray-600">Every engineer has shipped production systems at scale</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">Flexible Team Structure</h3>
+                                    <p class="text-gray-600">From individual experts to full squads, scaled to your needs</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 mb-1">AI-Augmented Delivery</h3>
+                                    <p class="text-gray-600">30-40% faster delivery through intelligent automation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fade-in">
+                        <div class="bg-gradient-to-br from-emerald-600 to-blue-600 rounded-2xl p-8 text-white">
+                            <h3 class="text-2xl font-bold mb-6">Our Expertise</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                                    <h4 class="font-semibold mb-2">DevOps & SRE</h4>
+                                    <p class="text-sm text-emerald-100">Platform engineering, CI/CD, monitoring</p>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                                    <h4 class="font-semibold mb-2">Full-Stack</h4>
+                                    <p class="text-sm text-emerald-100">React, Node, Python, Go</p>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                                    <h4 class="font-semibold mb-2">Data Platforms</h4>
+                                    <p class="text-sm text-emerald-100">ETL, warehouses, analytics</p>
+                                </div>
+                                <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                                    <h4 class="font-semibold mb-2">QA Automation</h4>
+                                    <p class="text-sm text-emerald-100">Testing frameworks, CI integration</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How We Work -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">How We Work</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        We integrate directly with your team or spin up a turnkey squad. Light on meetings, heavy on delivery.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center fade-in">
+                        <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">1</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Embed & Execute</h3>
+                        <p class="text-gray-600">We join your Slack, attend your standups, and ship code from day one</p>
+                    </div>
+                    <div class="text-center fade-in">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">2</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Measure & Iterate</h3>
+                        <p class="text-gray-600">Weekly demos, clear metrics, and continuous feedback loops</p>
+                    </div>
+                    <div class="text-center fade-in">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <span class="text-2xl font-bold text-white">3</span>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Document & Transfer</h3>
+                        <p class="text-gray-600">Clean handoffs with runbooks, tests, and knowledge transfer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Values</h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        The principles that guide every engagement
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow fade-in">
+                        <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Bias to Value</h3>
+                        <p class="text-gray-600 text-sm">Every line of code should move the needle on business metrics</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow fade-in">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+                                <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 1 1 0 000 2H6a2 2 0 00-2 2v6a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-1a1 1 0 100-2h1a4 4 0 014 4v6a4 4 0 01-4 4H6a4 4 0 01-4-4V7a4 4 0 014-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Documentation Matters</h3>
+                        <p class="text-gray-600 text-sm">Clear docs and runbooks for sustainable systems</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow fade-in">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Security by Default</h3>
+                        <p class="text-gray-600 text-sm">Best practices baked in from the start</p>
+                    </div>
+                    <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow fade-in">
+                        <div class="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-amber-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path>
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-semibold text-gray-900 mb-2">Clean Handoffs</h3>
+                        <p class="text-gray-600 text-sm">Set your team up for long-term success</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CTA -->
+        <section class="py-20 bg-gradient-to-r from-emerald-600 to-blue-600">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Ready to accelerate your development?</h2>
+                <p class="text-xl text-emerald-100 mb-8">Let's discuss your goals for the next 2-6 weeks</p>
+                <a href="https://calendly.com/fuzzy-software-llc/30min" class="bg-white text-emerald-600 px-8 py-4 rounded-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all font-semibold text-lg inline-block">
+                    Book a 30-min call
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div class="md:col-span-2">
+                    <img src="/assets/logo-white.svg" alt="Fuzzy Software LLC" class="h-12 w-auto mb-4">
+                    <p class="text-gray-500 mb-4">Senior engineers on demand. Outcomes in weeks, not quarters.</p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:contact@fuzzysoftwarellc.com" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/fuzzy-software-llc/" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="/services.html" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="/process.html" class="hover:text-white transition-colors">Process</a></li>
+                        <li><a href="/about.html" class="hover:text-white transition-colors">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/faqs.html" class="hover:text-white transition-colors">FAQs</a></li>
+                        <li><a href="/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="https://calendly.com/fuzzy-software-llc/30min" class="hover:text-white transition-colors">Book a Call</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>&copy; <span id="copyright-year"></span> Fuzzy Software LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/site.js"></script>
+</body>
+</html>

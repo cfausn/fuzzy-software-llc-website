@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Fuzzy Software LLC</title>
+    <meta name="description" content="Outcome-focused sprints: Cloud Cost Kill Switch, Data Lake Quickstart, and DevOps Stabilization. Start small and expand after value is proven.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Services - Fuzzy Software LLC">
+    <meta property="og:description" content="Outcome-focused sprints: Cloud Cost Kill Switch, Data Lake Quickstart, and DevOps Stabilization.">
+    <meta property="og:image" content="https://fuzzysoftwarellc.com/assets/og-image.png">
+    <meta property="og:url" content="https://fuzzysoftwarellc.com/services">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Services - Fuzzy Software LLC">
+    <meta name="twitter:description" content="Outcome-focused sprints: Cloud Cost Kill Switch, Data Lake Quickstart, and DevOps Stabilization.">
+    <meta name="twitter:image" content="https://fuzzysoftwarellc.com/assets/og-image.png">
+
+    <link rel="canonical" href="https://fuzzysoftwarellc.com/services">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        'primary-dark': '#1d4ed8',
+                        'primary-light': '#3b82f6',
+                        accent: '#0891b2',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body class="bg-white text-gray-900 antialiased">
+    <!-- Skip to content link -->
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary text-white px-4 py-2 rounded-md font-medium">Skip to content</a>
+
+    <!-- Announcement Bar -->
+    <div class="bg-gradient-to-r from-primary to-accent text-white text-sm py-2 text-center">
+        <p class="font-medium">🚀 Currently accepting Q1 2026 engagements • Response within 24 hours</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="sticky top-0 bg-white/95 backdrop-blur-md border-b border-gray-100 z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center group">
+                        <img src="/assets/logo.svg" alt="Fuzzy Software LLC" class="h-12 w-auto transition-transform group-hover:scale-105">
+                    </a>
+                    <div class="hidden lg:block ml-10">
+                        <div class="flex items-center space-x-1">
+                            <a href="/" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all hover:bg-gray-50 rounded-lg">Home</a>
+                            <a href="/services.html" class="px-4 py-2 text-gray-900 font-semibold border-b-2 border-primary">Services</a>
+                            <a href="/process.html" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all hover:bg-gray-50 rounded-lg">Process</a>
+                            <a href="/about.html" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all hover:bg-gray-50 rounded-lg">About</a>
+                            <a href="/faqs.html" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all hover:bg-gray-50 rounded-lg">FAQs</a>
+                            <a href="/contact.html" class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium transition-all hover:bg-gray-50 rounded-lg">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="tel:+1234567890" class="text-gray-600 hover:text-gray-900 font-medium hidden xl:block">
+                        <span class="text-sm">Quick Response:</span> <span class="font-semibold">24 hrs</span>
+                    </a>
+                    <a href="https://calendly.com/fuzzy-software-llc/30min" class="bg-gradient-to-r from-primary to-primary-dark text-white px-5 py-2.5 rounded-lg font-semibold hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                        Book a 30-min call →
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="lg:hidden p-2 rounded-lg bg-gray-50 text-gray-700 hover:bg-gray-100 transition-colors" aria-label="Open menu">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay"></div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="fixed inset-y-0 right-0 w-80 bg-white shadow-2xl transform translate-x-full transition-transform duration-300 z-50">
+        <div class="flex items-center justify-between p-4 border-b">
+            <span class="text-xl font-semibold">Menu</span>
+            <button id="mobile-menu-close" class="p-2 rounded-lg hover:bg-gray-100 transition-colors">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <div class="p-4 space-y-2">
+            <a href="/" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">Home</a>
+            <a href="/services.html" class="block px-4 py-3 rounded-lg text-gray-900 font-medium bg-gray-50">Services</a>
+            <a href="/process.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">Process</a>
+            <a href="/about.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">About</a>
+            <a href="/faqs.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">FAQs</a>
+            <a href="/contact.html" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-gray-50 transition-colors">Contact</a>
+            <div class="pt-4">
+                <a href="https://calendly.com/fuzzy-software-llc/30min" class="block px-4 py-3 bg-gradient-to-r from-primary to-primary-dark text-white rounded-lg text-center font-semibold">
+                    Book a 30-min call →
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden">
+            <!-- Background Pattern -->
+            <div class="absolute inset-0 bg-gradient-to-br from-dark via-gray-900 to-dark"></div>
+            <div class="absolute inset-0">
+                <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-accent/20 mix-blend-overlay"></div>
+            </div>
+
+            <!-- Hero Content -->
+            <div class="relative py-24 px-4 sm:px-6 lg:px-8">
+                <div class="max-w-7xl mx-auto text-center">
+                    <h1 class="text-5xl sm:text-6xl font-black text-white mb-6 fade-in">
+                        Our Services
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto fade-in">
+                        Outcome-focused sprints that deliver measurable results. Start small, expand after proven value.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="py-20 bg-white" id="services-grid">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Cloud Cost Kill Switch -->
+                <div class="mb-20 fade-in" id="cloud-cost">
+                    <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+                        <div class="lg:col-span-5 mb-8 lg:mb-0">
+                            <div class="inline-flex items-center px-3 py-1 rounded-full bg-red-100 text-red-800 text-sm font-medium mb-4">
+                                Most Popular Service
+                            </div>
+                            <h2 class="text-4xl font-bold text-gray-900 mb-4">Cloud Cost Kill Switch</h2>
+                            <p class="text-lg text-gray-600 mb-6">
+                                Transform your cloud infrastructure from a cost center to a strategic asset. Our systematic approach identifies and eliminates waste while optimizing performance.
+                            </p>
+                            <div class="flex items-center space-x-8 mb-6">
+                                <div>
+                                    <p class="text-3xl font-bold text-gray-900">$15M+</p>
+                                    <p class="text-sm text-gray-600">Annual savings estimated</p>
+                                </div>
+                                <div>
+                                    <p class="text-3xl font-bold text-gray-900">2 weeks</p>
+                                    <p class="text-sm text-gray-600">To complete diagnostic</p>
+                                </div>
+                            </div>
+                            <a href="https://calendly.com/fuzzy-software-llc/30min" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-primary-dark text-white rounded-lg font-semibold hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                                Schedule consultation →
+                            </a>
+                        </div>
+                        <div class="lg:col-span-7">
+                            <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-200">
+                                <h3 class="text-xl font-bold text-gray-900 mb-6">What's Included</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="flex items-start">
+                                        <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Complete cost mapping</p>
+                                            <p class="text-sm text-gray-600">Service-by-service breakdown</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Waste remediation</p>
+                                            <p class="text-sm text-gray-600">Identify & eliminate unused resources</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Right-sizing analysis</p>
+                                            <p class="text-sm text-gray-600">Data-driven instance optimization</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <svg class="w-6 h-6 text-green-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Commitment strategy</p>
+                                            <p class="text-sm text-gray-600">Savings plans & reserved instances</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Lake Quickstart -->
+                <div class="mb-20 fade-in" id="data-lake">
+                    <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+                        <div class="lg:col-span-7 order-2 lg:order-1">
+                            <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-200">
+                                <h3 class="text-xl font-bold text-gray-900 mb-6">Implementation Phases</h3>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                            <span class="text-sm font-bold text-blue-600">1</span>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Foundation</p>
+                                            <p class="text-sm text-gray-600">Infrastructure setup, data connectors, initial ingestion pipeline</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                            <span class="text-sm font-bold text-blue-600">2</span>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Transformation</p>
+                                            <p class="text-sm text-gray-600">Bronze to silver layer, data quality checks, initial transformations</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                            <span class="text-sm font-bold text-blue-600">3</span>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Analytics</p>
+                                            <p class="text-sm text-gray-600">Gold layer, business logic, initial dashboards and reports</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                            <span class="text-sm font-bold text-blue-600">4</span>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Production</p>
+                                            <p class="text-sm text-gray-600">Security hardening, documentation, handoff and training</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6 pt-6 border-t">
+                                    <p class="text-sm font-semibold text-gray-900 mb-3 text-center">Platform Expertise:</p>
+                                    <div class="flex justify-center items-center space-x-8">
+                                        <div class="flex items-center space-x-2">
+                                            <svg class="h-8 w-8 text-orange-500" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M6.76 4.84l-1.8-1.79-1.41 1.41 1.79 1.79 1.42-1.41zM4 10.5H1v2h3v-2zm9-9.95h-2V3.5h2V.55zm7.45 3.91l-1.41-1.41-1.79 1.79 1.41 1.41 1.79-1.79zm-3.21 13.7l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4zM20 10.5v2h3v-2h-3zm-8-5c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm-1 16.95h2V19.5h-2v2.95zm-7.45-3.91l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8z"/>
+                                            </svg>
+                                            <span class="font-semibold text-gray-700">AWS</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <svg class="h-8 w-8 text-red-500" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                                            </svg>
+                                            <span class="font-semibold text-gray-700">Databricks</span>
+                                        </div>
+                                        <div class="flex items-center space-x-2">
+                                            <svg class="h-8 w-8 text-cyan-500" viewBox="0 0 24 24" fill="currentColor">
+                                                <path d="M12 2L2 19h20L12 2zm0 3.99L18.53 17H5.47L12 5.99z"/>
+                                            </svg>
+                                            <span class="font-semibold text-gray-700">Snowflake</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:col-span-5 mb-8 lg:mb-0 order-1 lg:order-2">
+                            <h2 class="text-4xl font-bold text-gray-900 mb-4">Data Lake Quickstart</h2>
+                            <p class="text-lg text-gray-600 mb-6">
+                                Go from raw data to actionable insights in 4 weeks. We build production-ready data platforms that scale with your business.
+                            </p>
+                            <div class="flex items-center space-x-8 mb-6">
+                                <div>
+                                    <p class="text-3xl font-bold text-gray-900">3-4</p>
+                                    <p class="text-sm text-gray-600">Weeks to MVP</p>
+                                </div>
+                                <div>
+                                    <p class="text-3xl font-bold text-gray-900">Week 1</p>
+                                    <p class="text-sm text-gray-600">First insights delivered</p>
+                                </div>
+                            </div>
+                            <a href="https://calendly.com/fuzzy-software-llc/30min" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-primary-dark text-white rounded-lg font-semibold hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                                Start your data journey →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps Stabilization -->
+                <div class="fade-in" id="devops">
+                    <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+                        <div class="lg:col-span-5 mb-8 lg:mb-0">
+                            <h2 class="text-4xl font-bold text-gray-900 mb-4">DevOps Stabilization Sprint</h2>
+                            <p class="text-lg text-gray-600 mb-6">
+                                Stop fighting fires. Our 2-week sprint eliminates the root causes of deployment failures, flaky tests, and on-call nightmares.
+                            </p>
+                            <div class="flex items-center space-x-8 mb-6">
+                                <div>
+                                    <p class="text-3xl font-bold text-gray-900">70%</p>
+                                    <p class="text-sm text-gray-600">Reduction in failures</p>
+                                </div>
+                                <div>
+                                    <p class="text-3xl font-bold text-gray-900">2 weeks</p>
+                                    <p class="text-sm text-gray-600">To stability</p>
+                                </div>
+                            </div>
+                            <a href="https://calendly.com/fuzzy-software-llc/30min" class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary to-primary-dark text-white rounded-lg font-semibold hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+                                Fix your pipeline →
+                            </a>
+                        </div>
+                        <div class="lg:col-span-7">
+                            <div class="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-200">
+                                <h3 class="text-xl font-bold text-gray-900 mb-6">Common Problems We Fix</h3>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Flaky tests</p>
+                                            <p class="text-sm text-gray-600">Random failures eating time</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Slow pipelines</p>
+                                            <p class="text-sm text-gray-600">Hours to deploy changes</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Alert fatigue</p>
+                                            <p class="text-sm text-gray-600">Noisy, non-actionable alerts</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <svg class="w-5 h-5 text-red-500 mr-3 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                                        </svg>
+                                        <div>
+                                            <p class="font-semibold text-gray-900">Environment drift</p>
+                                            <p class="text-sm text-gray-600">Prod != staging != dev</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-6 p-4 bg-green-50 rounded-lg border border-green-200">
+                                    <p class="text-sm font-semibold text-green-900 mb-1">Typical Results</p>
+                                    <p class="text-sm text-green-700">70% reduction in deployment failures • 50% faster builds • 90% reduction in false alerts</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Services -->
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 fade-in">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Additional Capabilities</h2>
+                    <p class="text-xl text-gray-600">Flexible engagement models to match your needs</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow fade-in">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center text-white mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Staff Augmentation</h3>
+                        <p class="text-gray-600 mb-4">Senior full-stack, SRE, DevOps, and QA engineers ready to integrate with your team.</p>
+                        <p class="text-sm font-semibold text-gray-900">7-15 years average experience</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow fade-in" style="animation-delay: 0.1s">
+                        <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-lg flex items-center justify-center text-white mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Architecture Reviews</h3>
+                        <p class="text-gray-600 mb-4">Deep-dive assessments of your system design, scalability, and security posture.</p>
+                        <p class="text-sm font-semibold text-gray-900">Actionable recommendations</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow fade-in" style="animation-delay: 0.2s">
+                        <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-lg flex items-center justify-center text-white mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Platform Migrations</h3>
+                        <p class="text-gray-600 mb-4">Zero-downtime migrations between clouds, databases, or entire technology stacks.</p>
+                        <p class="text-sm font-semibold text-gray-900">Risk-free transitions</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20 bg-gradient-to-br from-dark to-gray-900">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold text-white mb-6 fade-in">
+                    Ready to accelerate your engineering?
+                </h2>
+                <p class="text-xl text-gray-300 mb-8 fade-in">
+                    Let's discuss which service best fits your immediate needs.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center fade-in">
+                    <a href="https://calendly.com/fuzzy-software-llc/30min" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-gray-900 bg-white rounded-xl hover:bg-gray-100 transform transition-all hover:-translate-y-1 hover:shadow-2xl">
+                        Book a 30-min consultation →
+                    </a>
+                    <a href="/contact.html" class="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-white/30 rounded-xl hover:bg-white/10 backdrop-blur-sm transition-all">
+                        Send us your requirements →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <img src="/assets/logo-white.svg" alt="Fuzzy Software LLC" class="h-12 w-auto mb-4">
+                    <p class="text-gray-500 mb-4 max-w-sm">Senior engineers on demand. Outcomes in weeks, not quarters.</p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:contact@fuzzysoftwarellc.com" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/fuzzy-software-llc/" class="text-gray-400 hover:text-white transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/services.html#cloud-cost" class="hover:text-white transition-colors">Cloud Cost Kill Switch</a></li>
+                        <li><a href="/services.html#data-lake" class="hover:text-white transition-colors">Data Lake Quickstart</a></li>
+                        <li><a href="/services.html#devops" class="hover:text-white transition-colors">DevOps Stabilization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="/process.html" class="hover:text-white transition-colors">Process</a></li>
+                        <li><a href="/faqs.html" class="hover:text-white transition-colors">FAQs</a></li>
+                        <li><a href="/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-gray-800">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm text-gray-500">© <span id="copyright-year"></span> Fuzzy Software LLC. All rights reserved.</p>
+                    <p class="text-sm text-gray-500 mt-4 md:mt-0">
+                        <a href="#" class="hover:text-white transition-colors">Privacy Policy</a> •
+                        <a href="#" class="hover:text-white transition-colors ml-4">Terms of Service</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script src="/assets/site.js"></script>
+</body>
+</html>
