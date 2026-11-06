@@ -41,11 +41,19 @@
     </header>
 
     <main id="main">
-        <section class="page-head">
+        <section class="page-head page-head--overlap">
             <div class="container">
                 <span class="eyebrow">About</span>
                 <h1>A technology firm built by practitioners.</h1>
                 <p class="lead">Fuzzy Software brings together engineers, architects, and creators who share a commitment to careful, durable work.</p>
+            </div>
+        </section>
+
+        <section class="banner">
+            <div class="container">
+                <figure class="media media--wide">
+                    <img src="/assets/img/office.jpg" srcset="/assets/img/office-800.jpg 800w, /assets/img/office.jpg 1600w" sizes="(max-width: 1200px) 100vw, 1200px" alt="Colleagues working together in a bright open-plan office" width="1600" height="900" decoding="async">
+                </figure>
             </div>
         </section>
 
@@ -98,25 +106,26 @@
         </section>
 
         <section id="security" class="section section--lg">
-            <div class="container">
-                <div class="split">
-                    <div class="split-aside">
+            <div class="container feature feature--reverse">
+                <figure class="media media--4x5 media--framed">
+                    <img src="/assets/img/building.jpg" srcset="/assets/img/building-800.jpg 800w, /assets/img/building.jpg 1600w" sizes="(max-width: 960px) 100vw, 45vw" alt="Looking up at the glass facade of a modern building" width="1600" height="1296" loading="lazy" decoding="async">
+                </figure>
+                <div class="feature-body">
+                    <span class="eyebrow">
                         <span class="hex-icon" aria-hidden="true">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
                         </span>
-                        <span class="eyebrow">Security &amp; confidentiality</span>
-                    </div>
-                    <div class="measure">
-                        <h2>Trust is foundational.</h2>
-                        <p>We treat client systems, code, and data with the highest standard of care.</p>
-                        <ul class="list">
-                            <li>Mutual non-disclosure agreements as standard practice</li>
-                            <li>Least-privilege access, requested only as needed</li>
-                            <li>Intellectual property transfers to the client per agreement</li>
-                            <li>Client code and proprietary information are never reused or shared</li>
-                            <li>Responsible use of AI tooling, with human review and client consent</li>
-                        </ul>
-                    </div>
+                        Security &amp; confidentiality
+                    </span>
+                    <h2>Trust is foundational.</h2>
+                    <p>We treat client systems, code, and data with the highest standard of care.</p>
+                    <ul class="list">
+                        <li>Mutual non-disclosure agreements as standard practice</li>
+                        <li>Least-privilege access, requested only as needed</li>
+                        <li>Intellectual property transfers to the client per agreement</li>
+                        <li>Client code and proprietary information are never reused or shared</li>
+                        <li>Responsible use of AI tooling, with human review and client consent</li>
+                    </ul>
                 </div>
             </div>
         </section>
