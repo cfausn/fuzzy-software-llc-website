@@ -18,7 +18,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
@@ -27,7 +27,7 @@
     <header class="site-header">
         <div class="container">
             <a href="/" class="brand" aria-label="Fuzzy Software home">
-                <img src="/assets/logo.svg" alt="Fuzzy Software LLC" width="280" height="60">
+                <img src="/assets/logo-nav.svg" alt="Fuzzy Software LLC" width="236" height="40">
             </a>
             <button id="nav-toggle" class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-width="1.75" d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -49,12 +49,15 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section--lg">
             <div class="container">
                 <div class="split">
-                    <div><span class="eyebrow">The firm</span></div>
+                    <div class="split-aside">
+                        <span class="hex-icon hex-icon--dot" aria-hidden="true"></span>
+                        <span class="eyebrow">The firm</span>
+                    </div>
                     <div class="measure">
-                        <p class="lead" style="margin-bottom: 1.5rem;">We began as a small group of senior engineers. Today we serve a wide range of clients across advisory, engineering, staffing, and interactive entertainment.</p>
+                        <p class="lead stack-bottom">We began as a small group of senior engineers. Today we serve a wide range of clients across advisory, engineering, staffing, and interactive entertainment.</p>
                         <p>Our clients range from early-stage companies to established enterprises. Some come to us with a specific problem. Others want a long-term partner to extend their capabilities. In each case, our approach is the same: understand the context and do the work well. We leave things better than we found them.</p>
                         <p>We value quiet competence over spectacle. Most of our work is never seen publicly, and we prefer it that way.</p>
                     </div>
@@ -62,13 +65,16 @@
             </div>
         </section>
 
-        <section class="section section--alt">
+        <section class="section section--lg section--tint">
             <div class="container">
                 <div class="split">
-                    <div><span class="eyebrow">Principles</span></div>
+                    <div class="split-aside">
+                        <span class="hex-icon hex-icon--dot" aria-hidden="true"></span>
+                        <span class="eyebrow">Principles</span>
+                    </div>
                     <div>
                         <h2>What guides our work.</h2>
-                        <div class="grid grid-2" style="margin-top: 2.5rem;">
+                        <div class="grid grid-2 stack-top">
                             <div class="principle">
                                 <h3>Purpose over activity</h3>
                                 <p>Effort is directed toward what matters to the organizations we serve.</p>
@@ -91,10 +97,15 @@
             </div>
         </section>
 
-        <section id="security" class="section">
+        <section id="security" class="section section--lg">
             <div class="container">
                 <div class="split">
-                    <div><span class="eyebrow">Security &amp; confidentiality</span></div>
+                    <div class="split-aside">
+                        <span class="hex-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+                        </span>
+                        <span class="eyebrow">Security &amp; confidentiality</span>
+                    </div>
                     <div class="measure">
                         <h2>Trust is foundational.</h2>
                         <p>We treat client systems, code, and data with the highest standard of care.</p>
@@ -110,17 +121,30 @@
             </div>
         </section>
 
-        <section id="working-with-us" class="section section--alt">
+        <section id="working-with-us" class="section section--lg section--alt">
             <div class="container">
                 <div class="split">
-                    <div><span class="eyebrow">Working with us</span></div>
+                    <div class="split-aside">
+                        <span class="hex-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v10H8l-4 4z"/><path d="M8 10h8M8 13h5"/></svg>
+                        </span>
+                        <span class="eyebrow">Working with us</span>
+                    </div>
                     <div class="measure">
                         <h2>Straightforward to engage.</h2>
                         <p>We can work under a client's master services agreement or provide our own standard terms. Our team is based in the United States and works across time zones to stay aligned with the teams we support.</p>
-                        <p>Every engagement begins with a conversation to understand goals, constraints, and fit.</p>
+                        <p class="stack-bottom">Every engagement begins with a conversation to understand goals, constraints, and fit.</p>
                         <a href="/contact" class="arrow-link">Get in touch</a>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="band">
+            <div class="container">
+                <h2>Start a conversation.</h2>
+                <p class="lead stack-bottom">We welcome inquiries about new work, partnerships, and collaboration.</p>
+                <a href="/contact" class="btn btn-light">Contact us</a>
             </div>
         </section>
     </main>
@@ -129,7 +153,7 @@
         <div class="container">
             <div class="footer-top">
                 <div>
-                    <img src="/assets/logo-white.svg" alt="Fuzzy Software LLC" width="280" height="60">
+                    <img src="/assets/logo-nav-white.svg" alt="Fuzzy Software LLC" width="236" height="40">
                     <p>Advisory, engineering, and game development.</p>
                 </div>
                 <div class="footer-links">

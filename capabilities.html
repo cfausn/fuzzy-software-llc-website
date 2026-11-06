@@ -18,7 +18,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
     <link rel="stylesheet" href="/assets/styles.css">
 </head>
 <body>
@@ -27,7 +27,7 @@
     <header class="site-header">
         <div class="container">
             <a href="/" class="brand" aria-label="Fuzzy Software home">
-                <img src="/assets/logo.svg" alt="Fuzzy Software LLC" width="280" height="60">
+                <img src="/assets/logo-nav.svg" alt="Fuzzy Software LLC" width="236" height="40">
             </a>
             <button id="nav-toggle" class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-width="1.75" d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -49,79 +49,100 @@
             </div>
         </section>
 
-        <div class="container">
-            <section id="advisory" class="capability">
-                <div class="split">
-                    <div><span class="eyebrow">01</span></div>
-                    <div class="measure">
-                        <h2>Advisory &amp; Architecture</h2>
-                        <p>We provide independent technical perspective to leadership and engineering teams. Our work clarifies the current state of a system, identifies meaningful risks and opportunities, and charts a practical path forward.</p>
-                        <ul class="list">
-                            <li>Technical assessments and due diligence</li>
-                            <li>System and solution architecture</li>
-                            <li>Modernization and migration planning</li>
-                            <li>Security, reliability, and operational review</li>
-                        </ul>
-                    </div>
+        <section id="advisory" class="capability">
+            <div class="container split">
+                <div class="split-aside">
+                    <span class="cap-num">01</span>
+                    <span class="hex-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>
+                    </span>
                 </div>
-            </section>
-
-            <section id="engineering" class="capability">
-                <div class="split">
-                    <div><span class="eyebrow">02</span></div>
-                    <div class="measure">
-                        <h2>Software &amp; Platform Engineering</h2>
-                        <p>We design, build, and maintain software across the full stack, from customer-facing applications to the infrastructure and data systems beneath them. Our emphasis is on clarity, maintainability, and systems that teams can own with confidence.</p>
-                        <ul class="list">
-                            <li>Application and product development</li>
-                            <li>Cloud infrastructure and DevOps</li>
-                            <li>Data platforms and analytics</li>
-                            <li>Quality engineering and test automation</li>
-                        </ul>
-                    </div>
+                <div class="measure">
+                    <h2>Advisory &amp; Architecture</h2>
+                    <p>We provide independent technical perspective to leadership and engineering teams. Our work clarifies the current state of a system, identifies meaningful risks and opportunities, and charts a practical path forward.</p>
+                    <ul class="list list--cols">
+                        <li>Technical assessments and due diligence</li>
+                        <li>System and solution architecture</li>
+                        <li>Modernization and migration planning</li>
+                        <li>Security, reliability, and operational review</li>
+                    </ul>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="staff-augmentation" class="capability">
-                <div class="split">
-                    <div><span class="eyebrow">03</span></div>
-                    <div class="measure">
-                        <h2>Staff Augmentation</h2>
-                        <p>We provide experienced engineers who integrate directly into client teams, adopting existing tools, processes, and culture. Arrangements range from a single specialist to a dedicated team.</p>
-                        <ul class="list">
-                            <li>Individual engineers and technical leads</li>
-                            <li>Dedicated, embedded teams</li>
-                            <li>Specialized and hard-to-hire skill sets</li>
-                            <li>Flexible arrangements that adapt over time</li>
-                        </ul>
-                    </div>
+        <section id="engineering" class="capability">
+            <div class="container split">
+                <div class="split-aside">
+                    <span class="cap-num">02</span>
+                    <span class="hex-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L3 7.5l9 4.5 9-4.5z"/><path d="M3 12l9 4.5 9-4.5"/><path d="M3 16.5L12 21l9-4.5"/></svg>
+                    </span>
                 </div>
-            </section>
-
-            <section id="games" class="capability">
-                <div class="split">
-                    <div><span class="eyebrow">04</span></div>
-                    <div class="measure">
-                        <h2>Game Development</h2>
-                        <p>We develop interactive experiences, bringing the same engineering discipline we apply elsewhere to the craft of games. We work on original projects and in collaboration with partners.</p>
-                        <ul class="list">
-                            <li>Game design and prototyping</li>
-                            <li>Gameplay, engine, and tools engineering</li>
-                            <li>Production and release support</li>
-                            <li>Multiplayer and online services</li>
-                        </ul>
-                    </div>
+                <div class="measure">
+                    <h2>Software &amp; Platform Engineering</h2>
+                    <p>We design, build, and maintain software across the full stack, from customer-facing applications to the infrastructure and data systems beneath them. Our emphasis is on clarity, maintainability, and systems that teams can own with confidence.</p>
+                    <ul class="list list--cols">
+                        <li>Application and product development</li>
+                        <li>Cloud infrastructure and DevOps</li>
+                        <li>Data platforms and analytics</li>
+                        <li>Quality engineering and test automation</li>
+                    </ul>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
 
-        <section class="section section--alt">
+        <section id="staff-augmentation" class="capability">
+            <div class="container split">
+                <div class="split-aside">
+                    <span class="cap-num">03</span>
+                    <span class="hex-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 19c0-3.3 2.7-5 6-5s6 1.7 6 5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14c2.7.2 4.5 1.7 4.5 4"/></svg>
+                    </span>
+                </div>
+                <div class="measure">
+                    <h2>Staff Augmentation</h2>
+                    <p>We provide experienced engineers who integrate directly into client teams, adopting existing tools, processes, and culture. Arrangements range from a single specialist to a dedicated team.</p>
+                    <ul class="list list--cols">
+                        <li>Individual engineers and technical leads</li>
+                        <li>Dedicated, embedded teams</li>
+                        <li>Specialized and hard-to-hire skill sets</li>
+                        <li>Flexible arrangements that adapt over time</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="capability">
+            <div class="container split">
+                <div class="split-aside">
+                    <span class="cap-num">04</span>
+                    <span class="hex-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10a5 5 0 015 5v1a4 4 0 01-7.2 2.4L14 14h-4l-.8 1.4A4 4 0 012 13v-1a5 5 0 015-5z"/><path d="M7 10v3M5.5 11.5h3"/><circle cx="15.5" cy="11" r=".6" fill="currentColor"/><circle cx="17.5" cy="13" r=".6" fill="currentColor"/></svg>
+                    </span>
+                </div>
+                <div class="measure">
+                    <h2>Game Development</h2>
+                    <p>We develop interactive experiences, bringing the same engineering discipline we apply elsewhere to the craft of games. We work on original projects and in collaboration with partners.</p>
+                    <ul class="list list--cols">
+                        <li>Game design and prototyping</li>
+                        <li>Gameplay, engine, and tools engineering</li>
+                        <li>Production and release support</li>
+                        <li>Multiplayer and online services</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--lg section--tint">
             <div class="container">
                 <div class="split">
-                    <div><span class="eyebrow">Engagements</span></div>
+                    <div class="split-aside">
+                        <span class="hex-icon hex-icon--dot" aria-hidden="true"></span>
+                        <span class="eyebrow">Engagements</span>
+                    </div>
                     <div>
                         <h2>Structured around the work.</h2>
-                        <div class="grid grid-3" style="margin-top: 2.5rem;">
+                        <div class="grid grid-3 stack-top">
                             <div class="principle">
                                 <h3>Project-based</h3>
                                 <p>Defined scope and deliverables, led by our team from start to finish.</p>
@@ -143,8 +164,8 @@
         <section class="band">
             <div class="container">
                 <h2>Discuss an engagement.</h2>
-                <p class="lead" style="margin-bottom: 2rem;">Tell us about your organization and what you have in mind.</p>
-                <a href="/contact" class="btn">Contact us</a>
+                <p class="lead stack-bottom">Tell us about your organization and what you have in mind.</p>
+                <a href="/contact" class="btn btn-light">Contact us</a>
             </div>
         </section>
     </main>
@@ -153,7 +174,7 @@
         <div class="container">
             <div class="footer-top">
                 <div>
-                    <img src="/assets/logo-white.svg" alt="Fuzzy Software LLC" width="280" height="60">
+                    <img src="/assets/logo-nav-white.svg" alt="Fuzzy Software LLC" width="236" height="40">
                     <p>Advisory, engineering, and game development.</p>
                 </div>
                 <div class="footer-links">

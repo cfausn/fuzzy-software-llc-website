@@ -18,7 +18,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
     <link rel="stylesheet" href="/assets/styles.css">
 
     <script type="application/ld+json">
@@ -39,7 +39,7 @@
     <header class="site-header">
         <div class="container">
             <a href="/" class="brand" aria-label="Fuzzy Software home">
-                <img src="/assets/logo.svg" alt="Fuzzy Software LLC" width="280" height="60">
+                <img src="/assets/logo-nav.svg" alt="Fuzzy Software LLC" width="236" height="40">
             </a>
             <button id="nav-toggle" class="nav-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-width="1.75" d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -58,14 +58,20 @@
                 <span class="eyebrow">Fuzzy Software</span>
                 <h1>Engineering and technology, delivered with care.</h1>
                 <p class="lead">We are a technology firm that advises, builds, and staffs. We work alongside organizations of every size on software, platforms, and interactive entertainment.</p>
-                <a href="/capabilities" class="arrow-link">Our capabilities</a>
+                <div class="hero-actions">
+                    <a href="/capabilities" class="btn btn-light">Our capabilities</a>
+                    <a href="/contact" class="arrow-link">Get in touch</a>
+                </div>
             </div>
         </section>
 
-        <section class="section section--alt">
+        <section class="section section--lg section--alt">
             <div class="container">
-                <div class="split" style="margin-bottom: 3rem;">
-                    <div><span class="eyebrow">What we do</span></div>
+                <div class="split section-head">
+                    <div class="split-aside">
+                        <span class="hex-icon hex-icon--dot" aria-hidden="true"></span>
+                        <span class="eyebrow">What we do</span>
+                    </div>
                     <div>
                         <h2>A broad practice, built on depth.</h2>
                         <p class="lead">Our work spans strategy through delivery. Clients engage us for a single question or a long-term partnership.</p>
@@ -74,25 +80,45 @@
 
                 <div class="grid grid-4">
                     <article class="card">
-                        <div class="card-index">01</div>
+                        <div class="card-top">
+                            <span class="hex-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg>
+                            </span>
+                            <span class="card-index">01</span>
+                        </div>
                         <h3>Advisory &amp; Architecture</h3>
                         <p>Independent technical perspective on systems, platforms, and the decisions that shape them.</p>
                         <a href="/capabilities#advisory" class="arrow-link">Learn more</a>
                     </article>
                     <article class="card">
-                        <div class="card-index">02</div>
+                        <div class="card-top">
+                            <span class="hex-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L3 7.5l9 4.5 9-4.5z"/><path d="M3 12l9 4.5 9-4.5"/><path d="M3 16.5L12 21l9-4.5"/></svg>
+                            </span>
+                            <span class="card-index">02</span>
+                        </div>
                         <h3>Software &amp; Platform Engineering</h3>
                         <p>Design and delivery of applications, infrastructure, and data systems built to last.</p>
                         <a href="/capabilities#engineering" class="arrow-link">Learn more</a>
                     </article>
                     <article class="card">
-                        <div class="card-index">03</div>
+                        <div class="card-top">
+                            <span class="hex-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M3 19c0-3.3 2.7-5 6-5s6 1.7 6 5"/><circle cx="17" cy="9" r="2.5"/><path d="M16.5 14c2.7.2 4.5 1.7 4.5 4"/></svg>
+                            </span>
+                            <span class="card-index">03</span>
+                        </div>
                         <h3>Staff Augmentation</h3>
                         <p>Experienced engineers who join existing teams and work within established practices.</p>
                         <a href="/capabilities#staff-augmentation" class="arrow-link">Learn more</a>
                     </article>
                     <article class="card">
-                        <div class="card-index">04</div>
+                        <div class="card-top">
+                            <span class="hex-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10a5 5 0 015 5v1a4 4 0 01-7.2 2.4L14 14h-4l-.8 1.4A4 4 0 012 13v-1a5 5 0 015-5z"/><path d="M7 10v3M5.5 11.5h3"/><circle cx="15.5" cy="11" r=".6" fill="currentColor"/><circle cx="17.5" cy="13" r=".6" fill="currentColor"/></svg>
+                            </span>
+                            <span class="card-index">04</span>
+                        </div>
                         <h3>Game Development</h3>
                         <p>Design, engineering, and production for interactive experiences across platforms.</p>
                         <a href="/capabilities#games" class="arrow-link">Learn more</a>
@@ -101,13 +127,16 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section section--lg section--tint">
             <div class="container">
                 <div class="split">
-                    <div><span class="eyebrow">How we work</span></div>
+                    <div class="split-aside">
+                        <span class="hex-icon hex-icon--dot" aria-hidden="true"></span>
+                        <span class="eyebrow">How we work</span>
+                    </div>
                     <div>
                         <h2>Considered, collaborative, and discreet.</h2>
-                        <div class="grid grid-3" style="margin-top: 2.5rem;">
+                        <div class="grid grid-3 stack-top">
                             <div class="principle">
                                 <h3>Experienced people</h3>
                                 <p>Our teams are led by practitioners who have built and operated systems at scale.</p>
@@ -129,8 +158,8 @@
         <section class="band">
             <div class="container">
                 <h2>Start a conversation.</h2>
-                <p class="lead" style="margin-bottom: 2rem;">We welcome inquiries about new work, partnerships, and collaboration.</p>
-                <a href="/contact" class="btn">Contact us</a>
+                <p class="lead stack-bottom">We welcome inquiries about new work, partnerships, and collaboration.</p>
+                <a href="/contact" class="btn btn-light">Contact us</a>
             </div>
         </section>
     </main>
@@ -139,7 +168,7 @@
         <div class="container">
             <div class="footer-top">
                 <div>
-                    <img src="/assets/logo-white.svg" alt="Fuzzy Software LLC" width="280" height="60">
+                    <img src="/assets/logo-nav-white.svg" alt="Fuzzy Software LLC" width="236" height="40">
                     <p>Advisory, engineering, and game development.</p>
                 </div>
                 <div class="footer-links">

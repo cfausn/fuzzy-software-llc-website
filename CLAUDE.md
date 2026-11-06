@@ -19,5 +19,6 @@ Tone: understated and professional. Avoid metrics, guarantees, timelines, prices
 - `services.html`, `process.html`, `faqs.html` are meta-refresh redirect stubs kept for old inbound links. Don't add content to them.
 - The header (nav) and footer are duplicated in every page. Change them in all four pages together. The current page's nav link carries `aria-current="page"`.
 - `assets/styles.css`: hand-written CSS, design tokens in `:root`. Fonts (Inter + Source Serif 4) load via a `<link>` in each page's `<head>`.
+- Visual motif: hexagons from the logo mark. `assets/hex-pattern.svg` (dark sections), `hex-dots.svg` (`.section--tint`), `hero-mark.svg` (right side of `.hero`/`.page-head`), `hex-outline.svg` (`.hex-icon` frame). Header/footer use `logo-nav.svg` / `logo-nav-white.svg` (no tagline); `logo.svg` etc. are the full brand files.
 - `assets/site.js`: copyright year, mobile nav toggle, contact form submit.
 - Contact form posts to Formspree (`https://formspree.io/f/mnngpybq`). Required fields are listed in `site.js` (`name`, `email`, `message`) and must match the input ids in `contact.html`.

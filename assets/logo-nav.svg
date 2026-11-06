@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 40" width="236" height="40" fill="none">
+  <defs>
+    <linearGradient id="lg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#0891b2"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(-6.6,-3) scale(1.2)">
+    <path d="M15 5 L24.5 10.25 L24.5 19.75 L15 25 L5.5 19.75 L5.5 10.25 Z" fill="url(#lg)"/>
+    <path d="M15 9 L20 11.5 L20 18.5 L15 21 L10 18.5 L10 11.5 Z" fill="white" opacity="0.3"/>
+    <circle cx="15" cy="15" r="2" fill="white" opacity="0.85"/>
+  </g>
+  <text x="34" y="27" font-family="Inter, system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="21" fill="#0f172a"><tspan font-weight="700">Fuzzy</tspan> <tspan font-weight="500">Software</tspan> <tspan font-size="12" font-weight="500" fill="#64748b" letter-spacing="0.6">LLC</tspan></text>
+</svg>
