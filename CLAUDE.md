@@ -4,19 +4,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the fuzzy-software-website project. Currently, this is an empty repository awaiting initial development.
+Marketing site for Fuzzy Software LLC (fuzzysoftwarellc.com). Plain static HTML/CSS/JS hosted on GitHub Pages (`CNAME`). No build step, no framework, no dependencies.
+
+Tone: understated and professional. Avoid metrics, guarantees, timelines, prices, badges, and sales-style CTAs.
 
 ## Commands
 
-*To be added as the project develops*
+- Preview locally: `python3 -m http.server 8000`, then open `http://localhost:8000/index.html`. GitHub Pages serves `/about` from `about.html`; the local server needs the `.html` suffix.
+- Re-render PNG brand assets after editing an SVG, e.g. `rsvg-convert -w 1200 -h 630 assets/og-image.svg -o assets/og-image.png`.
 
 ## Architecture
 
-*To be added as the project develops*
-
-## Development Notes
-
-This CLAUDE.md should be updated as the project grows to include:
-- Build and test commands once a build system is established
-- Architecture notes once the codebase structure is defined
-- Any project-specific conventions or patterns that emerge
+- Pages: `index.html`, `capabilities.html`, `about.html`, `contact.html`. Internal links omit `.html` (e.g. `/about`).
+- `services.html`, `process.html`, `faqs.html` are meta-refresh redirect stubs kept for old inbound links. Don't add content to them.
+- The header (nav) and footer are duplicated in every page. Change them in all four pages together. The current page's nav link carries `aria-current="page"`.
+- `assets/styles.css`: hand-written CSS, design tokens in `:root`. Fonts (Inter + Source Serif 4) load via a `<link>` in each page's `<head>`.
+- `assets/site.js`: copyright year, mobile nav toggle, contact form submit.
+- Contact form posts to Formspree (`https://formspree.io/f/mnngpybq`). Required fields are listed in `site.js` (`name`, `email`, `message`) and must match the input ids in `contact.html`.

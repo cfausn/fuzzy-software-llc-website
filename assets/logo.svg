@@ -32,17 +32,11 @@
 
   <!-- Company Name with better typography -->
   <g transform="translate(60, 30)">
-    <text font-family="Inter, system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#0f172a">
-      <tspan>Fuzzy</tspan>
-      <tspan x="60" font-weight="500">Software</tspan>
-    </text>
-    <text x="155" y="0" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#64748b" letter-spacing="0.5">
-      LLC
-    </text>
+    <text font-family="Inter, system-ui, -apple-system, sans-serif" font-size="22" fill="#0f172a"><tspan font-weight="700">Fuzzy</tspan> <tspan font-weight="500">Software</tspan> <tspan font-size="13" font-weight="400" fill="#64748b" letter-spacing="0.5">LLC</tspan></text>
   </g>
 
   <!-- Subtle tagline -->
   <text x="60" y="50" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="9" font-weight="400" fill="#94a3b8" letter-spacing="0.3">
-    SENIOR ENGINEERS ON DEMAND
+    ENGINEERING &amp; TECHNOLOGY
   </text>
 </svg>
