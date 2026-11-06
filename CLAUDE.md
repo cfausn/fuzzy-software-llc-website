@@ -20,6 +20,6 @@ Tone: understated and professional. Avoid metrics, guarantees, timelines, prices
 - The header (nav) and footer are duplicated in every page. Change them in all four pages together. The current page's nav link carries `aria-current="page"`.
 - `assets/styles.css`: hand-written CSS, design tokens in `:root`. Fonts (Inter + Source Serif 4) load via a `<link>` in each page's `<head>`.
 - Visual motif: hexagons from the logo mark. `assets/hex-pattern.svg` (dark sections), `hex-dots.svg` (`.section--tint`), `hero-mark.svg` (right side of `.hero`/`.page-head`), `hex-outline.svg` (`.hex-icon` frame). Header/footer use `logo-nav.svg` / `logo-nav-white.svg` (no tagline); `logo.svg` etc. are the full brand files.
-- Photos live in `assets/img/` as `<name>.jpg` (1600w) and `<name>-800.jpg` (800w), used with `srcset`. Sources and license are in `assets/img/CREDITS.md`. The people pictured are not staff, so never caption them as the team.
+- Photos live in `assets/img/` as `<name>.jpg` (1600w) and `<name>-800.jpg` (800w), used with `srcset`. Sources and license are in `assets/img/CREDITS.md`. Art direction: no people and no product branding.
 - `assets/site.js`: copyright year, mobile nav toggle, contact form submit.
 - Contact form posts to Formspree (`https://formspree.io/f/mnngpybq`). Required fields are listed in `site.js` (`name`, `email`, `message`) and must match the input ids in `contact.html`.
