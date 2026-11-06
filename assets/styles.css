@@ -54,7 +54,8 @@ a { color: var(--accent); text-decoration: none; }
 a:hover { color: var(--accent-ink); text-decoration: underline; text-underline-offset: 3px; }
 
 :focus { outline: none; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+:focus-visible { outline: 2px solid var(--focus, var(--accent)); outline-offset: 3px; border-radius: 2px; }
+.hero, .page-head, .band, .contact-panel, .site-footer { --focus: var(--accent-light); }
 
 h1, h2, h3 {
   font-family: var(--font-serif);
@@ -69,6 +70,7 @@ h1 { font-size: clamp(2.6rem, 6vw, 4.5rem); font-weight: 500; letter-spacing: -0
 h2 { font-size: clamp(2rem, 3.6vw, 2.75rem); }
 h3 { font-size: 1.25rem; }
 p { margin: 0 0 1rem; }
+p, li { text-wrap: pretty; }
 ul { margin: 0; padding: 0; }
 
 .sr-only {
@@ -128,6 +130,7 @@ ul { margin: 0; padding: 0; }
 .lead { font-size: 1.25rem; color: var(--ink-soft); max-width: 40rem; }
 .muted { color: var(--muted); }
 .measure { max-width: 44rem; }
+.measure > p, .feature-body > p { max-width: 38rem; }
 
 /* ---------- Header ---------- */
 .site-header {
@@ -154,7 +157,8 @@ ul { margin: 0; padding: 0; }
 
 .nav-toggle {
   display: none; background: none; border: 1px solid var(--line); border-radius: var(--radius);
-  padding: .45rem; color: var(--ink); cursor: pointer;
+  width: 44px; height: 44px; padding: 0; align-items: center; justify-content: center;
+  color: var(--ink); cursor: pointer;
 }
 .nav-toggle svg { width: 1.25rem; height: 1.25rem; }
 
@@ -263,6 +267,7 @@ ul { margin: 0; padding: 0; }
    ratio-sized parent with height:100%, which some browsers fail to resolve. */
 .card-media {
   --ratio: 16 / 10;
+  position: relative;
   margin: -2.25rem -2rem 0;
   overflow: hidden;
   background: var(--hero);
@@ -284,9 +289,18 @@ ul { margin: 0; padding: 0; }
   aspect-ratio: var(--ratio);
   object-fit: cover;
   border-radius: var(--radius);
+  background: var(--surface-alt);
 }
+/* Shared grade so the photo set reads as one family */
+.media img, .card-media img { filter: saturate(.82) contrast(1.03); }
+.media::after, .card-media::after {
+  content: ''; position: absolute; inset: 0; pointer-events: none;
+  border-radius: var(--radius);
+  background: rgba(11, 26, 51, .10);
+  mix-blend-mode: multiply;
+}
+.card-media::after { border-radius: 0; }
 .media--4x3 { --ratio: 4 / 3; }
-.media--4x5 { --ratio: 4 / 5; }
 .media--wide { --ratio: 21 / 9; }
 .media--framed::before {
   content: ''; position: absolute; z-index: -1;
@@ -299,7 +313,7 @@ ul { margin: 0; padding: 0; }
 
 .feature { display: grid; grid-template-columns: 1.1fr 1fr; gap: 5rem; align-items: center; }
 .feature--reverse > .media { order: 2; }
-.feature-body .eyebrow { display: flex; align-items: center; gap: .75rem; }
+.feature-body .eyebrow { display: flex; align-items: center; gap: 1rem; }
 
 #security .media { --ratio: 1 / 1; }
 #security .media img { object-position: 50% 100%; }
@@ -312,14 +326,15 @@ ul { margin: 0; padding: 0; }
 .card h3 { margin-bottom: .75rem; min-height: 2.9em; }
 .card p { color: var(--body); font-size: 1rem; flex: 1; }
 .card .arrow-link { align-self: flex-start; font-size: .9rem; margin-top: .75rem; }
+.card .arrow-link::before { content: ''; position: absolute; inset: 0; z-index: 3; }
+.card:focus-within { box-shadow: 0 0 0 2px var(--accent); }
+.card .arrow-link:focus-visible { outline: none; }
 
 .principle { border-top: 2px solid var(--accent); padding-top: 1.25rem; }
-.principle h3 { font-size: 1.2rem; }
 .principle p { color: var(--body); font-size: 1rem; }
 
 /* ---------- Capability detail ---------- */
 .capability { padding: 6rem 0; scroll-margin-top: 5rem; }
-.capability:nth-of-type(even) { background: var(--surface-alt); }
 .capability p { color: var(--body); }
 .cap-num {
   font-family: var(--font-serif); font-weight: 500;
@@ -367,7 +382,7 @@ ul { margin: 0; padding: 0; }
   position: relative; overflow: hidden; isolation: isolate;
   background:
     linear-gradient(180deg, rgba(11, 26, 51, .62) 0%, rgba(11, 26, 51, .93) 75%),
-    var(--hero) url('/assets/img/workspace-800.jpg') center 30% / cover no-repeat;
+    var(--hero) url('/assets/img/building-800.jpg') center 20% / cover no-repeat;
   color: var(--on-dark);
   border-radius: var(--radius); padding: 2.5rem 2rem;
   display: flex; flex-direction: column;
@@ -436,8 +451,15 @@ ul { margin: 0; padding: 0; }
 /* ---------- Responsive ---------- */
 @media (max-width: 960px) {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
-  .grid-3 { grid-template-columns: 1fr; }
   .split, .contact-layout { grid-template-columns: 1fr; gap: 1.75rem; }
+  .hero h1, .page-head h1, .hero .lead, .page-head .lead { max-width: min(36rem, 70%); }
+  .hero::after { width: 320px; right: -90px; top: 1rem; transform: none; opacity: .6; }
+  .page-head::after { width: 260px; right: -80px; top: 0; transform: none; opacity: .5; }
+  .feature .media, #security .media { --ratio: 16 / 9; }
+  .media--framed::before { inset: 1rem -.75rem -1rem 1rem; }
+  .media--framed-left::before { inset: 1rem 1rem -1rem -.75rem; }
+  .capability .split { gap: 1rem; }
+  .capability .split-aside { max-width: 44rem; }
   .split-aside { position: static; margin-top: 0; }
   .cap-media { --ratio: 16 / 9; order: -1; margin: 0 0 .5rem; }
   .card h3 { min-height: 0; }
@@ -458,7 +480,8 @@ ul { margin: 0; padding: 0; }
   }
   .capability { padding: 4rem 0; }
   .cap-num { font-size: 2.75rem; }
-  .grid-2, .grid-4, .form-row, .list--cols { grid-template-columns: 1fr; }
+  .grid-2, .grid-3, .grid-4, .form-row, .list--cols { grid-template-columns: 1fr; }
+  .hero h1, .page-head h1, .hero .lead, .page-head .lead { max-width: none; }
   .card { padding: 1.75rem 1.5rem 1.5rem; }
   .card-top { margin-bottom: 1.25rem; }
   .card-media { --ratio: 2 / 1; margin: -1.75rem -1.5rem 0; }
@@ -470,9 +493,6 @@ ul { margin: 0; padding: 0; }
                 var(--hero) url('/assets/hex-pattern.svg') 0 0 / 48.5px 84px;
   }
   .media--wide { --ratio: 16 / 10; }
-  .media--4x5 { --ratio: 4 / 3; }
-  .media--framed::before { inset: 1rem -.75rem -1rem 1rem; }
-  .media--framed-left::before { inset: 1rem 1rem -1rem -.75rem; }
   .banner { margin-top: -3rem; }
   .page-head--overlap { padding-bottom: 6rem; }
   .form-panel { padding: 1.5rem; }

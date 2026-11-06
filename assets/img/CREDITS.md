@@ -6,11 +6,10 @@ Art direction: no people, no visible product branding. Architecture, workspaces,
 
 | File | Unsplash photo |
 | --- | --- |
-| `advisory.jpg` | https://unsplash.com/photos/JXyY3jRV9oI |
+| `advisory-plans.jpg` | https://unsplash.com/photos/rn00OVh0gEI (cropped to landscape) |
 | `engineering.jpg` | https://unsplash.com/photos/5sLNGV2EFRM |
 | `staffing.jpg` | https://unsplash.com/photos/GGWYYHbfi2s |
 | `games.jpg` | https://unsplash.com/photos/BVqoF4TzJ1Y |
 | `atrium-spiral.jpg` | https://unsplash.com/photos/vgoPSHAR5Yc |
 | `atrium.jpg` | https://unsplash.com/photos/avT9dYK-9rE |
 | `building.jpg` | https://unsplash.com/photos/yA-WIoC-wiA |
-| `workspace.jpg` | https://unsplash.com/photos/teRVpNnlR_c |
