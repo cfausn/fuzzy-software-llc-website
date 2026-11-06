@@ -5,5 +5,5 @@
       <stop offset="100%" stop-color="#0891b2"/>
     </linearGradient>
   </defs>
-  <polygon points="26,1.5 50.5,15.75 50.5,44.25 26,58.5 1.5,44.25 1.5,15.75" stroke="url(#og)" stroke-width="1.5" fill="#ffffff"/>
+  <polygon points="26,0.75 51.25,15.375 51.25,44.625 26,59.25 0.75,44.625 0.75,15.375" stroke="url(#og)" stroke-width="1.5" fill="#ffffff"/>
 </svg>
